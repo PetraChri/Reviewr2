@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>ReviewR</title>
+</head>
+
+<body>
+    <section data-role="page" id="showPage" class="active">
+        <ul id="list"></ul>
+    </section>
+
+
+    <section data-role="page" id="detailsPage" class="inactive">
+        <div id="details">
+            <img src="" />
+            <h4></h4>
+            <h5></h5>
+            <p></p>
+        </div>
+    </section>
+    <section data-role="page" id="addPage" class="inactive">
+        <h1>Add Review</h1>
+        <div class="button-wrapper">
+            <button id="pic">Take Pic</button>
+        </div>
+
+        <img src="" alt="" id="image">
+        <div class="form-wrapper">
+            <form action="">
+                <label for="reviewTitle" class="title_label">Title</label>
+                <input type="text" name="reviewTitle" id="reviewTitle">
+                <label for="reviewText" class="title_label">Review</label>
+                <input type="text" name="reviewText" id="reviewText">
+
+                <label for="reviewRating" class="title_label">Rating</label>
+                <input type="number" name="reviewRating" id="reviewRating" max=5>
+
+                <li class="rating">
+                    <label for="rating" class="title_label">Rating</label>
+                    <div class="acidjs-rating-stars" id="rating">
+                        <input type="radio" name="group-1" id="group-1-0" value="5" class="star" />
+                        <label for="group-1-0"></label>
+                        <input type="radio" name="group-1" id="group-1-1" value="4" class="star" />
+                        <label for="group-1-1"></label>
+                        <input type="radio" name="group-1" id="group-1-2" value="3" class="star" />
+                        <label for="group-1-2"></label>
+                        <input type="radio" name="group-1" id="group-1-3" value="2" class="star" />
+                        <label for="group-1-3"></label>
+                        <input type="radio" name="group-1" id="group-1-4" value="1" class="star" />
+                        <label for="group-1-4"></label>
+                    </div>
+                </li>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <ol>
+            <li><a id="reviews">Reviews</a></li>
+            <li><a id="add">Add Review</a></li>
+        </ol>
+    </footer>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
